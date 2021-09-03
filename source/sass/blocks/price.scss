@@ -1,0 +1,56 @@
+.price__head-title {
+  @include font-parametrs(600, 50px, 90px);
+  color: $dark-2;
+}
+
+.price__description {
+  line-height: 170%;
+  color: rgba($color: $dark-2, $alpha: 0.7);
+}
+
+.price__contact {
+  @include font-parametrs(500, 22px, 34px);
+  color: $dark;
+}
+
+.price__contact-link {
+  @include font-parametrs(500, 20px, 30px);
+  color: $black;
+}
+
+.price__list {
+  @extend %list-reset;
+}
+
+.price__title {
+  @include font-parametrs(600, 28px, 38px);
+  color: rgba($color: $dark, $alpha: 0.7);
+
+  &--marked {
+    @include font-parametrs(600, 28px, 34px);
+    color: $orange-basic;
+  }
+}
+
+.price-subtitle {
+  line-height: 24px;
+  color: $dark-2;
+}
+
+.price__inner-list {
+  @extend %list-reset;
+  line-height: 32px;
+}
+
+.price__inner-link {
+  @include font-parametrs(600, 12px, 15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 310px;
+  height: 75px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $orange-basic;
+}

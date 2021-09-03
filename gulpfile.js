@@ -1,33 +1,32 @@
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
-const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
+const sass = require('gulp-sass')(require('sass'))
 const htmlmin = require("gulp-htmlmin");
-const csso = require("postcss-csso");
+var syntax_scss = require('postcss-scss');
 const rename = require("gulp-rename");
 const terser = require("gulp-terser");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+var reporter = require('postcss-reporter');
+var stylelint = require('stylelint');
 
-// Styles
 
 const styles = () => {
   return gulp.src("source/sass/style.scss")
-    .pipe(plumber())
+    /* .pipe(plumber()) */
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer(),
-      csso()
+      autoprefixer()
     ]))
-    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(sync.stream());
 }
 
@@ -59,3 +58,7 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, server, watcher
 );
+
+
+
+

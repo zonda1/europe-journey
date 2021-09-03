@@ -1,0 +1,55 @@
+.countries__list {
+  @extend %list-reset;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.countries__link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  letter-spacing: -0.415px;
+  color: rgba($color: $dark-2, $alpha: 0.3)
+}
+
+.countries__country-title {
+  @include font-parametrs(600, 55px, 90px);
+  color: $dark-2;
+  letter-spacing: -1.245px;
+}
+
+.countries__country-description {
+  color: rgba($color: $dark-2, $alpha: 0.7);
+  letter-spacing: -0.466667px;
+}
+
+.countries__country-link {
+  @include font-parametrs(600, 12px, 15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 75px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $orange-basic;
+}
+
+.countries__feadback-title {
+  @include font-parametrs(500, 30px, 37px);
+  color: $dark-2;
+  letter-spacing: -0.691667px;
+}
+
+.countries__feadback-description {
+  color: rgba($color: $dark-2, $alpha: 0.7);
+  letter-spacing: -0.408333px;
+}
+
+.countries__feadback-author {
+  @include font-parametrs(500, 16px, 20px);
+  letter-spacing: -0.466667px;
+  color: $dark-2;
+}

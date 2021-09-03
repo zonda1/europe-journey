@@ -1,0 +1,36 @@
+.travel__city-title {
+  @include font-parametrs(600, 18px, 32px);
+  color: $dark;
+}
+
+.travel__city-list {
+  @include font-parametrs(500, 14px, 17px);
+  color: rgba($color: $dark, $alpha: 0.5);
+}
+
+.travel__contact-title {
+  @include font-parametrs(600, 18px, 32px);
+  color: $dark;
+}
+
+.travel__contact-link {
+  @include font-parametrs(600, 14px, 17px);
+  color: $orange-basic;
+  text-decoration: underline;
+}
+
+.price__contact-link {
+  line-height: 32px;
+  color: $orange-basic;
+  text-decoration: underline;
+}
+
+.travel__study-title {
+  @include font-parametrs(600, 18px, 32px);
+  color: $dark;
+}
+
+.travel__study-description {
+  @include font-parametrs(500, 14px, 24px);
+  color: rgba($color: $dark, $alpha: 0.5);
+}

@@ -1,0 +1,26 @@
+.main-nav {
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav__list {
+  @extend %list-reset;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  span {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    text-decoration: underline;
+    color: $dark;
+  }
+}
