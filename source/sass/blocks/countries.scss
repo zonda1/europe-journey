@@ -1,7 +1,25 @@
+.countries__wrapper {
+  max-width: 1443px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 370px 430px;
+  grid-template-rows: auto auto;
+  column-gap: 100px;
+  row-gap: 65px;
+  padding-left: 137px;
+  position: relative;
+  padding-bottom: 507px;
+  background: url(../../img/europe-map-dskt.png) top 120px right no-repeat;
+}
+
 .countries__list {
   @extend %list-reset;
+  grid-area: 1/1/2/3;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 13px;
+  border-bottom: 1px solid rgba($color: $dark-2, $alpha: 0.3);
 }
 
 .countries__link {
@@ -10,18 +28,36 @@
   line-height: 24px;
 
   letter-spacing: -0.415px;
-  color: rgba($color: $dark-2, $alpha: 0.3)
+
+  color: rgba($color: $dark-2, $alpha: 0.3);
+
+  &--marked {
+    color: $orange-basic;
+  }
 }
 
 .countries__country-title {
   @include font-parametrs(600, 55px, 90px);
   color: $dark-2;
   letter-spacing: -1.245px;
+  margin: 12px 0 45px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 175px;
+    height: 2.92px;
+    top: 100px;
+    left: 0;
+    background-color: $orange-basic;
+  }
 }
 
 .countries__country-description {
   color: rgba($color: $dark-2, $alpha: 0.7);
   letter-spacing: -0.466667px;
+  margin: 0 0 50px;
 }
 
 .countries__country-link {
@@ -37,15 +73,39 @@
   background-color: $orange-basic;
 }
 
+.countries__feadback {
+  position: absolute;
+  width: 382px;
+  height: 367px;
+  top: 218px;
+  right: 137px;
+  background-color: $white;
+  padding: 0 30px 0;
+}
+
 .countries__feadback-title {
   @include font-parametrs(500, 30px, 37px);
   color: $dark-2;
   letter-spacing: -0.691667px;
+  margin: 30px 0 35px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 68px;
+    height: 0.73px;
+    top: 49px;
+    left: 0;
+    background-color: $orange-basic;
+  }
 }
 
 .countries__feadback-description {
   color: rgba($color: $dark-2, $alpha: 0.7);
+  font-size: 14px;
   letter-spacing: -0.408333px;
+  margin: 0 0 35px;
 }
 
 .countries__feadback-author {

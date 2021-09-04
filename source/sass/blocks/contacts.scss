@@ -1,6 +1,30 @@
+.contacts__wrapper {
+  @extend %desktop-wrapper;
+}
+
+.contacts__form-container {
+  height: 455px;
+  background: url(../img/sky-pink-dskp.jpg) left no-repeat;
+  display: flex;
+  margin-bottom: 160px;
+}
+
+.contacts__form {
+  width: 656px;
+  height: 315px;
+  background-color: $white;
+  padding: 0 50px 0;
+  margin-top: 70px;
+  margin-left: auto;
+  text-align: center;
+  box-shadow: 0px 4px 30px rgba($color: $dark-3, $alpha: 0.1);
+  border-radius: 5px;
+}
+
 .contacts__form-title {
   @include font-parametrs(600, 25px, 32px);
   color: $dark;
+  margin: 50px 0 11px;
 }
 
 .contacts__form-subtitle {
@@ -8,11 +32,48 @@
   color: $dark;
 }
 
+.contacts__list {
+  @extend %list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.contacts__item {
+  position: relative;
+}
+
 .contacts__tel {
-  &span {
+  width: 269px;
+  height: 50px;
+  border: 1px solid rgba($color: $dark-2, $alpha: 0.3);
+  padding-left: 51px;
+
+  &::placeholder {
     @include font-parametrs(500, 14px, 17px);
     color: $dark;
+    letter-spacing: 1px;
   }
+}
+
+.contacts__point-icon {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+
+.contacts__tel-icon {
+  position: absolute;
+  left: 26px;
+  top: 20px;
+}
+
+.contacts__email {
+  width: 269px;
+  height: 50px;
+  border: 1px solid rgba($color: $dark-2, $alpha: 0.3);
+  padding-left: 15px;
 
   &::placeholder {
     @include font-parametrs(500, 14px, 17px);
@@ -20,9 +81,6 @@
   }
 }
 
-.contacts__email {
-  &::placeholder {
-    @include font-parametrs(500, 14px, 17px);
-    color: $dark;
-  }
+.contacts__button {
+  margin-left: 190px;
 }
