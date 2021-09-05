@@ -1,3 +1,8 @@
 .page-footer__wrapper {
   @extend %desktop-wrapper;
+
+  @media (max-width:$tablet-max-width) {
+    max-width: 726px;
+    margin: 0 auto;
+  }
 }

@@ -1,5 +1,10 @@
 .tours__wrapper {
   @extend %desktop-wrapper;
+
+  @media (max-width:$tablet-max-width) {
+    max-width: 616px;
+    margin: 0 auto;
+  }
 }
 
 .tours__title {
@@ -7,10 +12,22 @@
   color: $dark-2;
   letter-spacing: -1.245px;
   margin: 0 0 64px;
+
+  @media (max-width:$tablet-max-width) {
+    @include font-parametrs(600, 30px, 45px);
+    letter-spacing: normal;
+    text-align: center;
+    margin: 0 0 20px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .tours__intro {
   margin: 0 0 55px;
+
   letter-spacing: -0.466667px;
   position: relative;
   color: rgba($color: $dark-2, $alpha: 0.7);
@@ -23,6 +40,15 @@
     left: 0;
     top: -34px;
     background-color: $orange-basic;
+
+    @media (max-width:$tablet-max-width) {
+      display: none;
+    }
+  }
+
+  @media (max-width:$tablet-max-width) {
+    text-align: center;
+    margin: 0 0 40px;
   }
 }
 
@@ -32,9 +58,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 24px;
+
+  @media (max-width:$tablet-max-width) {
+    margin: 0 0 55px;
+  }
 }
 
 .tours__item {
+  font-weight: 500;
   width: 350px;
   height: 430px;
   margin-bottom: 100px;
@@ -42,10 +73,24 @@
 
   &:nth-last-child(2) {
     margin-left: 175px;
+
+    @media (max-width:$tablet-max-width) {
+      margin-left: 0;
+    }
   }
 
   &:last-child {
     margin-right: 175px;
+
+    @media (max-width:$tablet-max-width) {
+      margin-left: 164px;
+    }
+  }
+
+  @media (max-width:$tablet-max-width) {
+    width: 288px;
+    height: 425px;
+    margin-bottom: 40px;
   }
 }
 
@@ -66,5 +111,16 @@
     margin: 0;
     color: $dark-2;
     background-color: $white;
+
+    @media (max-width:$tablet-max-width) {
+      left: 36px;
+    }
+  }
+
+  img {
+    @media (max-width:$tablet-max-width) {
+      width: 288px;
+      height: 425px;
+    }
   }
 }

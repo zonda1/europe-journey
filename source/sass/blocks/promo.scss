@@ -5,6 +5,18 @@
 
   &__description {
     padding: 185px 0 0 56.5%;
+
+    @media (max-width:$tablet-max-width) {
+      text-align: center;
+      padding: 60px 0 0 185px;
+    }
+  }
+
+  @media (max-width:$tablet-max-width) {
+    height: 344px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 80px;
   }
 }
 
@@ -16,6 +28,12 @@
   margin: 0 0 30px;
   color: $white;
   letter-spacing: -1.10667px;
+
+  @media (max-width:$tablet-max-width) {
+    @include font-parametrs(600, 30px, 45px);
+    margin: 0 0 15px -5px;
+    letter-spacing: normal;
+  }
 }
 
 .promo__subtitle {
@@ -25,6 +43,11 @@
   margin: 0 0 39px;
   color: $white;
   letter-spacing: -0.466667px;
+
+  @media (max-width:$tablet-max-width) {
+    max-width: 400px;
+    margin: 0 0 10px;
+  }
 }
 
 .promo__link {
@@ -40,4 +63,11 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   background-color: $orange-basic;
+
+  @media (max-width:$tablet-max-width) {
+    @include font-parametrs(500, 10px, 12px);
+    width: 250px;
+    height: 50px;
+    margin-left: 74px;
+  }
 }

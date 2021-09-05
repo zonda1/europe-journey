@@ -10,6 +10,14 @@
   position: relative;
   padding-bottom: 507px;
   background: url(../../img/europe-map-dskt.png) top 120px right no-repeat;
+
+  @media (max-width:$tablet-max-width) {
+    display: block;
+    padding: 0;
+    margin-bottom: 100px;
+    background: none;
+  }
+
 }
 
 .countries__list {
@@ -20,6 +28,11 @@
   justify-content: space-between;
   padding-bottom: 13px;
   border-bottom: 1px solid rgba($color: $dark-2, $alpha: 0.3);
+
+  @media (max-width:$tablet-max-width) {
+    max-width: 726px;
+    margin: 0 auto 30px;
+  }
 }
 
 .countries__link {
@@ -33,6 +46,14 @@
 
   &--marked {
     color: $orange-basic;
+  }
+}
+
+.countries__country {
+  @media (max-width:$tablet-max-width) {
+    max-width: 726px;
+    margin: 0 auto 30px;
+    text-align: center;
   }
 }
 
@@ -51,6 +72,16 @@
     top: 100px;
     left: 0;
     background-color: $orange-basic;
+
+    @media (max-width:$tablet-max-width) {
+      display: none;
+    }
+  }
+
+  @media (max-width:$tablet-max-width) {
+    @include font-parametrs(600, 30px, 45px);
+    letter-spacing: normal;
+    margin: 0 0 20px;
   }
 }
 
@@ -58,6 +89,19 @@
   color: rgba($color: $dark-2, $alpha: 0.7);
   letter-spacing: -0.466667px;
   margin: 0 0 50px;
+
+  @media (max-width:$tablet-max-width) {
+    margin: 0 0 20px;
+  }
+}
+
+.countries__container-pic {
+  @media (max-width:$tablet-max-width) {
+    img {
+      width: 768px;
+      height: 415px;
+    }
+  }
 }
 
 .countries__country-link {
@@ -71,6 +115,12 @@
   text-transform: uppercase;
   color: $white;
   background-color: $orange-basic;
+
+  @media (max-width:$tablet-max-width) {
+    @include font-parametrs(500, 10px, 12px);
+    height: 50px;
+    margin-left: 238px;
+  }
 }
 
 .countries__feadback {
@@ -81,6 +131,11 @@
   right: 137px;
   background-color: $white;
   padding: 0 30px 0;
+
+  @media (max-width:$tablet-max-width) {
+    top: 482px;
+    right: 193px;
+  }
 }
 
 .countries__feadback-title {

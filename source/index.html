@@ -12,12 +12,14 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <a href="" class="main-nav__logo-link">
           <picture>
-            <img src="img/logo-pic__desktop.png" alt="" class="main-nav__logo-pic">
+            <source media="(max-width:1023px)" srcset="img/logo-pic__tablet.svg">
+            <img src="img/logo-pic__desktop.svg" class="main-nav__logo-pic" width="57" height="22" alt="">
           </picture>
         </a>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link">О путешествии</a>
@@ -55,6 +57,7 @@
             <a href="" class="tours__link">
               <p>Греция</p>
               <picture>
+                <source media="(max-width:1023px)" srcset="img/greece_tablet.jpg">
                 <img src="img/greece_dktp.jpg" alt="">
               </picture>
             </a>
@@ -63,6 +66,7 @@
             <a href="" class="tours__link">
               <p>Албания</p>
               <picture>
+                <source media="(max-width:1023px)" srcset="img/albania_tablet.jpg">
                 <img src="img/albania_dktp.jpg" alt="">
               </picture>
             </a>
@@ -71,6 +75,7 @@
             <a href="" class="tours__link">
               <p>Македония</p>
               <picture>
+                <source media="(max-width:1023px)" srcset="img/makedonia_tablet.jpg">
                 <img src="img/makedonia_dktp.jpg" alt="">
               </picture>
             </a>
@@ -79,6 +84,7 @@
             <a href="" class="tours__link">
               <p>Черногория</p>
               <picture>
+                <source media="(max-width:1023px)" srcset="img/chernogoriya_tablet.jpg">
                 <img src="img/chernogoriya_dktp.jpg" alt="">
               </picture>
             </a>
@@ -87,6 +93,7 @@
             <a href="" class="tours__link">
               <p>Хорватия</p>
               <picture>
+                <source media="(max-width:1023px)" srcset="img/croatia_tablet.jpg">
                 <img src="img/croatia_dktp.jpg" alt="">
               </picture>
             </a>
@@ -125,6 +132,7 @@
         </div>
         <div class="countries__container-pic">
           <picture>
+            <source media="(max-width:1023px)" srcset="img/greece-info_tablet.jpg">
             <img src="img/greece-info_dktp.jpg" width="430" height="596" alt="">
           </picture>
         </div>
@@ -149,7 +157,8 @@
         </div>
         <ul class="price__list">
           <li class="price__items price__items--marked">
-            <h3 class="price__title price__title--marked">Комплексный <span>$1999</span></h3>
+            <h3 class="price__title price__title--marked">Комплексный</h3>
+            <p class="price__price price__price--marked">$1999</p>
             <p class="price__subtitle">Ознакомьтесь с перечнем того, <br> что входит в данный пакет </p>
             <ul class="price__inner-list">
               <li class="price__inner-item">Разработанный маршрут с гидом группы</li>
@@ -160,7 +169,8 @@
             <a href="" class="price__inner-link">купить тур сейчас</a>
           </li>
           <li class="price__items">
-            <h3 class="price__title">Экономный <span>$1399</span></h3>
+            <h3 class="price__title">Экономный </h3>
+            <p class="price__price">$1399</p>
             <p class="price__subtitle">Ознакомьтесь с перечнем того, <br> что входит в данный пакет </p>
             <ul class="price__inner-list">
               <li class="price__inner-item">Разработанный маршрут с гидом группы</li>
@@ -256,7 +266,7 @@
                   d="M7.3961 8.62432C7.31155 7.42623 7.57729 6.24606 8.2809 5.29684C8.8909 4.43632 9.68511 3.96636 10.6424 3.69172C11.4487 3.4525 11.9772 3.74561 12.2097 4.64204C12.5419 5.98224 13.016 7.3225 13.1881 8.73361C13.2425 9.35485 12.8408 10.2332 12.406 10.6856C11.3158 11.7589 11.5423 12.5399 12.3698 14.1643C12.6264 14.6881 13.0341 15.5934 13.8283 16.7919C14.6558 17.9992 15.0936 18.6472 16.1566 18.0975C17.3374 17.5035 18.198 17.8855 19.0889 18.8444C19.6928 19.5369 20.3572 20.1318 20.9612 20.8243C21.8339 21.8542 21.7946 22.5641 21.1121 23.2915C19.8831 24.6309 17.8538 25.0736 16.3439 24.1766C15.5104 23.6881 14.6799 23.0487 14.0186 22.303C11.1045 18.9825 9.00266 15.1212 7.73735 10.7632C7.53502 10.0265 7.4414 9.28104 7.3961 8.62432Z"
                   stroke="#D7D9DF" stroke-width="2" stroke-miterlimit="10" />
               </svg>
-              <a href="tel:+749978468446" class="travel__contact-tel">+7 (499)-784-684-46</a>
+              <a href="tel:+749978468446" class="travel__contact-tel">+7 (499) -784-684-46</a>
             </li>
           </ul>
         </div>
@@ -275,7 +285,7 @@
   <footer>
 
   </footer>
-
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

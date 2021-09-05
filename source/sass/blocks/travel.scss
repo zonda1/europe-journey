@@ -9,7 +9,13 @@
   width: 387px;
 
   border-right: 1px solid $grey;
+
+  @media (max-width:$tablet-max-width) {
+    width: 395px;
+    margin-bottom: 24px;
+  }
 }
+
 
 .travel__city-title {
   @include font-parametrs(600, 18px, 32px);
@@ -38,12 +44,20 @@
 
 .travel__contact {
   width: 395px;
+
+  @media (max-width:$tablet-max-width) {
+    width: 331px;
+  }
 }
 
 .travel__contact-title {
   @include font-parametrs(600, 18px, 32px);
   color: $dark;
   margin: 0 0 25px 65px;
+
+  @media (max-width:$tablet-max-width) {
+    margin: 0 0 28px 50px;
+  }
 }
 
 .travel__contact-item {
@@ -60,25 +74,47 @@
 .travel__tel-icon {
   position: absolute;
   left: 65px;
+
+  @media (max-width:$tablet-max-width) {
+    top: -3px;
+    left: 50px;
+  }
 }
 
 .travel__contact-email {
-  @include font-parametrs(500, 14px, 17px);
+  @include font-parametrs(400, 14px, 17px);
   color: $orange-basic;
   text-decoration: underline;
   padding-left: 106px;
+
+  @media (max-width:$tablet-max-width) {
+    padding-left: 91px;
+  }
 }
 
 .travel__contact-tel {
-  @include font-parametrs(500, 16px, 32px);
+  @include font-parametrs(400, 16px, 32px);
   color: $orange-basic;
   text-decoration: underline;
   padding-left: 106px;
+
+  @media (max-width:$tablet-max-width) {
+    padding-left: 91px;
+  }
 }
 
 .travel__study {
   padding-left: 55px;
   border-left: 1px solid $grey;
+
+  @media (max-width:$tablet-max-width) {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 30px;
+    border-left: none;
+    border-top: 1px solid $grey;
+  }
 }
 
 .travel__study-title {
@@ -92,4 +128,12 @@
   @include font-parametrs(500, 14px, 24px);
   color: rgba($color: $dark, $alpha: 0.5);
   margin: 0;
+
+  @media (max-width:$tablet-max-width) {
+    width: 100%;
+
+    br {
+      display: none;
+    }
+  }
 }
