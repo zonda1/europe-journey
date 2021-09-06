@@ -14,6 +14,16 @@
     width: 395px;
     margin-bottom: 24px;
   }
+
+  @media (max-width:$mobile-max-width) {
+    max-width: 288px;
+
+    border-right: none;
+    border-bottom: 1px solid $grey;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
 }
 
 
@@ -21,17 +31,67 @@
   @include font-parametrs(600, 18px, 32px);
   color: $dark;
   margin: 0 0 20px;
+
+  @media (max-width:$mobile-max-width) {
+    margin-top: 6px;
+  }
 }
 
 .travel__city-list {
   width: 100%;
-  @include font-parametrs(500, 14px, 17px);
+  display: flex;
+  flex-wrap: wrap;
+  @extend %list-reset;
+  @include font-parametrs(400, 14px, 17px);
   color: rgba($color: $dark, $alpha: 0.5);
 
-  td {
-    width: 110px;
-    height: 17px;
-    padding: 0 0 7px 0;
+  @media (max-width:$mobile-max-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+}
+
+.travel__group-list {
+  @extend %list-reset;
+
+  @media (max-width:$mobile-max-width) {
+    margin-bottom: 10px;
+  }
+
+  &--first {
+    margin-right: 49px;
+
+    @media (max-width:$tablet-max-width) {
+      margin-right: 45px;
+    }
+
+    @media (max-width:$mobile-max-width) {
+      margin-right: 0;
+    }
+  }
+
+  &--second {
+    margin-right: 51px;
+
+    @media (max-width:$mobile-max-width) {
+      margin-right: 0;
+    }
+  }
+
+  &--third {
+    @media (max-width:$mobile-max-width) {
+      margin-left: 77px;
+    }
+  }
+
+  li {
+    margin-bottom: 10px;
+
+    @media (max-width:$mobile-max-width) {
+      width: 134px;
+    }
   }
 }
 
@@ -48,6 +108,11 @@
   @media (max-width:$tablet-max-width) {
     width: 331px;
   }
+
+  @media (max-width:$mobile-max-width) {
+    max-width: inherit;
+
+  }
 }
 
 .travel__contact-title {
@@ -58,6 +123,12 @@
   @media (max-width:$tablet-max-width) {
     margin: 0 0 28px 50px;
   }
+
+  @media (max-width:$mobile-max-width) {
+    max-width: inherit;
+    text-align: center;
+    margin-left: 0;
+  }
 }
 
 .travel__contact-item {
@@ -65,12 +136,7 @@
   position: relative;
 }
 
-/* .travel__contact-email {
-  position: absolute;
-  left: 65px;
-} */
-
-.travel__tel-email,
+.travel__email-icon,
 .travel__tel-icon {
   position: absolute;
   left: 65px;
@@ -78,6 +144,16 @@
   @media (max-width:$tablet-max-width) {
     top: -3px;
     left: 50px;
+  }
+
+  @media (max-width:$mobile-max-width) {
+    left: 20px;
+  }
+}
+
+.travel__tel-icon {
+  @media (max-width:$mobile-max-width) {
+    left: 39px;
   }
 }
 
@@ -90,6 +166,10 @@
   @media (max-width:$tablet-max-width) {
     padding-left: 91px;
   }
+
+  @media (max-width:$mobile-max-width) {
+    padding-left: 61px;
+  }
 }
 
 .travel__contact-tel {
@@ -100,6 +180,10 @@
 
   @media (max-width:$tablet-max-width) {
     padding-left: 91px;
+  }
+
+  @media (max-width:$mobile-max-width) {
+    padding-left: 80px;
   }
 }
 
@@ -125,15 +209,21 @@
 
 .travel__study-description {
   width: 330px;
-  @include font-parametrs(500, 14px, 24px);
+  @include font-parametrs(400, 14px, 24px);
   color: rgba($color: $dark, $alpha: 0.5);
   margin: 0;
 
   @media (max-width:$tablet-max-width) {
     width: 100%;
+    margin-bottom: 54px;
 
     br {
       display: none;
     }
+  }
+
+  @media (max-width:$mobile-max-width) {
+    max-width: inherit;
+    margin-bottom: 26px;
   }
 }

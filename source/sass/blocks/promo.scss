@@ -1,14 +1,19 @@
 .promo {
   height: 860px;
-  background-image: url(../img/main-background-photo.jpg);
+  background: url(../img/main-background-photo.jpg) no-repeat;
   margin-bottom: 200px;
 
   &__description {
-    padding: 185px 0 0 56.5%;
+    padding: 185px 0 0 1075px;
 
     @media (max-width:$tablet-max-width) {
       text-align: center;
       padding: 60px 0 0 185px;
+    }
+
+    @media (max-width:$mobile-max-width) {
+      text-align: center;
+      padding: 0;
     }
   }
 
@@ -17,6 +22,17 @@
     background-size: contain;
     background-repeat: no-repeat;
     margin-bottom: 80px;
+  }
+
+  @media (max-width:$mobile-max-width) {
+    height: 433px;
+    background: url(../../img/main-background-mobile.jpg) top no-repeat;
+  }
+}
+
+.promo__description {
+  @media (max-width:$mobile-max-width) {
+    padding: 0 16px 0;
   }
 }
 
@@ -34,19 +50,33 @@
     margin: 0 0 15px -5px;
     letter-spacing: normal;
   }
+
+  @media (max-width:$mobile-max-width) {
+    @include font-parametrs(600, 24px, 36px);
+    max-width: 294px;
+    padding-top: 81px;
+    margin-bottom: 102px;
+    margin-left: 3px;
+  }
 }
 
 .promo__subtitle {
   max-width: 370px;
   font-size: 16px;
-  line-height: 170%;
-  margin: 0 0 39px;
+  line-height: 27px;
+  margin: 0 0 34px;
   color: $white;
   letter-spacing: -0.466667px;
 
   @media (max-width:$tablet-max-width) {
     max-width: 400px;
     margin: 0 0 10px;
+  }
+
+  @media (max-width:$mobile-max-width) {
+    max-width: 320px;
+    color: $dark-2;
+    margin: 0 0 20px;
   }
 }
 
@@ -62,12 +92,18 @@
   color: $white;
   letter-spacing: 2px;
   text-transform: uppercase;
-  background-color: $orange-basic;
+  background: $orange-basic url(../../img/arrow-down-icon.svg) top 50% right 40px no-repeat;
+
 
   @media (max-width:$tablet-max-width) {
     @include font-parametrs(500, 10px, 12px);
     width: 250px;
     height: 50px;
     margin-left: 74px;
+  }
+
+  @media (max-width:$mobile-max-width) {
+    width: 288px;
+    margin: 0;
   }
 }

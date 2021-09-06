@@ -5,4 +5,9 @@
     max-width: 726px;
     margin: 0 auto;
   }
+
+  @media (max-width:$mobile-max-width) {
+    max-width: 288px;
+    margin: 0 auto;
+  }
 }

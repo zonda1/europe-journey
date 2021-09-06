@@ -18,6 +18,9 @@
     background: none;
   }
 
+  @media (max-width:$mobile-max-width) {
+    max-width: 320px;
+  }
 }
 
 .countries__list {
@@ -30,8 +33,22 @@
   border-bottom: 1px solid rgba($color: $dark-2, $alpha: 0.3);
 
   @media (max-width:$tablet-max-width) {
-    max-width: 726px;
-    margin: 0 auto 30px;
+    max-width: 747px;
+    flex-wrap: nowrap;
+    margin: 0 0 30px 21px;
+    overflow: hidden;
+  }
+
+  @media (max-width:$mobile-max-width) {
+    max-width: 320px;
+    padding-bottom: 11px;
+    margin: 0 0 24px 16px;
+  }
+}
+
+.countries__item {
+  @media (max-width:$tablet-max-width) {
+    margin-right: 99px;
   }
 }
 
@@ -54,6 +71,11 @@
     max-width: 726px;
     margin: 0 auto 30px;
     text-align: center;
+  }
+
+  @media (max-width:$mobile-max-width) {
+    max-width: 288px;
+    margin: 0 auto 50px;
   }
 }
 
@@ -83,6 +105,11 @@
     letter-spacing: normal;
     margin: 0 0 20px;
   }
+
+  @media (max-width:$mobile-max-width) {
+    @include font-parametrs(600, 24px, 36px);
+
+  }
 }
 
 .countries__country-description {
@@ -99,6 +126,15 @@
   @media (max-width:$tablet-max-width) {
     img {
       width: 768px;
+      height: 415px;
+    }
+  }
+
+  @media (max-width:$mobile-max-width) {
+    width: 320px;
+
+    img {
+      width: 320px;
       height: 415px;
     }
   }
@@ -121,6 +157,11 @@
     height: 50px;
     margin-left: 238px;
   }
+
+  @media (max-width:$mobile-max-width) {
+    width: 288px;
+    margin-left: 0;
+  }
 }
 
 .countries__feadback {
@@ -135,6 +176,16 @@
   @media (max-width:$tablet-max-width) {
     top: 482px;
     right: 193px;
+  }
+
+  @media (max-width:$mobile-max-width) {
+    width: 268px;
+    height: 431px;
+    top: 681px;
+    left: 26px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
@@ -153,6 +204,16 @@
     top: 49px;
     left: 0;
     background-color: $orange-basic;
+
+    @media (max-width:$mobile-max-width) {
+      left: 100px;
+      top: 37px;
+    }
+  }
+
+  @media (max-width:$mobile-max-width) {
+    @include font-parametrs(500, 20px, 24px);
+    letter-spacing: -0.691667px;
   }
 }
 
@@ -161,6 +222,11 @@
   font-size: 14px;
   letter-spacing: -0.408333px;
   margin: 0 0 35px;
+
+  @media (max-width:$mobile-max-width) {
+    max-width: 228px;
+    margin: 0 auto 68px;
+  }
 }
 
 .countries__feadback-author {

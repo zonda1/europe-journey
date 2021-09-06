@@ -28,7 +28,14 @@
             <a href="" class="main-nav__link">Цены</a>
           </li>
           <li class="main-nav__item">
-            <a href="tel:+749978468446" class="main-nav__link"><span>+7 (499)-784-684-46</span></a>
+            <a href="tel:+749978468446" class="main-nav__link">
+              <svg class="main-nav__tel-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                viewBox="0 0 30 30" fill="none">
+                <path
+                  d="M7.3961 8.62432C7.31155 7.42623 7.57729 6.24606 8.2809 5.29684C8.8909 4.43632 9.68511 3.96636 10.6424 3.69172C11.4487 3.4525 11.9772 3.74561 12.2097 4.64204C12.5419 5.98224 13.016 7.3225 13.1881 8.73361C13.2425 9.35485 12.8408 10.2332 12.406 10.6856C11.3158 11.7589 11.5423 12.5399 12.3698 14.1643C12.6264 14.6881 13.0341 15.5934 13.8283 16.7919C14.6558 17.9992 15.0936 18.6472 16.1566 18.0975C17.3374 17.5035 18.198 17.8855 19.0889 18.8444C19.6928 19.5369 20.3572 20.1318 20.9612 20.8243C21.8339 21.8542 21.7946 22.5641 21.1121 23.2915C19.8831 24.6309 17.8538 25.0736 16.3439 24.1766C15.5104 23.6881 14.6799 23.0487 14.0186 22.303C11.1045 18.9825 9.00266 15.1212 7.73735 10.7632C7.53502 10.0265 7.4414 9.28104 7.3961 8.62432Z"
+                  stroke="#141517" stroke-width="2" stroke-miterlimit="10" />
+              </svg>
+              <span>+7 (499) -784-684-46</span></a>
           </li>
         </ul>
       </nav>
@@ -44,7 +51,7 @@
         <p class="promo__subtitle">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также
           потрясающая красота
           природы.</p>
-        <a href="" class="promo__link">смотреть тур</a>
+        <a href="#!" class="promo__link">смотреть тур</a>
       </div>
     </section>
 
@@ -54,16 +61,17 @@
         <p class="tours__intro">Вы можете выбрать полный тур или <br> частичный, с посещением первых 3 мест</p>
         <ul class="tours__list">
           <li class="tours__item">
-            <a href="" class="tours__link">
+            <a href="#!" class="tours__link">
               <p>Греция</p>
               <picture>
+                <source media="(max-width:767px)" srcset="img/greece_mobile.jpg">
                 <source media="(max-width:1023px)" srcset="img/greece_tablet.jpg">
                 <img src="img/greece_dktp.jpg" alt="">
               </picture>
             </a>
           </li>
           <li class="tours__item">
-            <a href="" class="tours__link">
+            <a href="#!" class="tours__link">
               <p>Албания</p>
               <picture>
                 <source media="(max-width:1023px)" srcset="img/albania_tablet.jpg">
@@ -72,7 +80,7 @@
             </a>
           </li>
           <li class="tours__item">
-            <a href="" class="tours__link">
+            <a href="#!" class="tours__link">
               <p>Македония</p>
               <picture>
                 <source media="(max-width:1023px)" srcset="img/makedonia_tablet.jpg">
@@ -81,7 +89,7 @@
             </a>
           </li>
           <li class="tours__item">
-            <a href="" class="tours__link">
+            <a href="#!" class="tours__link">
               <p>Черногория</p>
               <picture>
                 <source media="(max-width:1023px)" srcset="img/chernogoriya_tablet.jpg">
@@ -90,7 +98,7 @@
             </a>
           </li>
           <li class="tours__item">
-            <a href="" class="tours__link">
+            <a href="#!" class="tours__link">
               <p>Хорватия</p>
               <picture>
                 <source media="(max-width:1023px)" srcset="img/croatia_tablet.jpg">
@@ -132,6 +140,7 @@
         </div>
         <div class="countries__container-pic">
           <picture>
+            <source media="(max-width:767px)" srcset="img/greece-info_mobile.jpg">
             <source media="(max-width:1023px)" srcset="img/greece-info_tablet.jpg">
             <img src="img/greece-info_dktp.jpg" width="430" height="596" alt="">
           </picture>
@@ -166,7 +175,7 @@
               <li class="price__inner-item">Завтраки, ужины в отелях и ланчи на природе</li>
               <li class="price__inner-item">Экскурсии по удивительно красивым местам Европы</li>
             </ul>
-            <a href="" class="price__inner-link">купить тур сейчас</a>
+            <a href="#!" class="price__inner-link">купить тур сейчас</a>
           </li>
           <li class="price__items">
             <h3 class="price__title">Экономный </h3>
@@ -179,11 +188,53 @@
               <li class="price__inner-item">Только завтраки в отелях</li>
               <li class="price__inner-item">Экскурсии по удивительно красивым местам Европы</li>
             </ul>
-            <a href="" class="price__inner-link">купить тур сейчас</a>
+            <a href="#!" class="price__inner-link">купить тур сейчас</a>
           </li>
         </ul>
       </div>
     </section>
+    <section class="pupup contacts">
+      <div class="popup__wrapper">
+        <div class="popup__buy-tour">
+          <div class="popup__pic-block">
+            <img src="img/popup_pic.jpg" width="338" height="444" alt="Мыс у залива">
+          </div>
+          <form action="https://echo.htmlacademy.ru" class="popup__form" method="POST" target="_blank"
+            autocomplete="off">
+            <h2 class="popup__form-title">Купить тур</h2>
+            <ul class="popup__form-list">
+              <li class="popup__form-item contacts__item">
+                <svg class="popup__tel-icon contacts__tel-icon" width="18" height="19" fill="none">
+                  <path xmlns="http://www.w3.org/2000/svg"
+                    d="M7.07 5.52H4.466V8.068H3.584V5.52H0.98V4.694H3.584V2.132H4.466V4.694H7.07V5.52ZM15.56 0.199999V0.913999L11.458 10H10.366L14.398 1.096H9.35802V2.93H8.36402V0.199999H15.56Z"
+                    fill="#141517" />
+                </svg>
+                <svg class="popup__point-icon contacts__point-icon" width="6" height="6" fill="none">
+                  <path xmlns="http://www.w3.org/2000/svg"
+                    d="M3.519 6.028L3.434 4.158L4.998 5.161L5.542 4.243L3.893 3.393L5.542 2.543L4.998 1.608L3.434 2.611L3.519 0.740999H2.448L2.533 2.611L0.952 1.608L0.425 2.543L2.074 3.393L0.425 4.243L0.952 5.161L2.533 4.158L2.448 6.028H3.519Z"
+                    fill="#FE7865" />
+                </svg>
+                <input class="popup__tel contacts__tel" type="tel" name="popup-tel" placeholder="Введите 10 цифр номера"
+                  required>
+              </li>
+              <li class="popup__form-item">
+                <input class="popup__email contacts__email" type="email" name="popup-email" placeholder="E-mail"
+                  required>
+              </li>
+            </ul>
+            <button class="popup__button" type="submit">Отправить</button>
+            <button class="popup__close"><span class="visually-hidden">Закрыть окно</span></button>
+          </form>
+        </div>
+      </div>
+      <div class="popup__success">
+
+        <p class="popup__success-title">Форма успешно отправлена, спасибо! :)</p>
+        <button class="popup__close"><span class="visually-hidden">Закрыть окно</span></button>
+
+      </div>
+    </section>
+
     <section class="contacts">
       <div class="contacts__wrapper">
         <div class="contacts__form-container">
@@ -202,11 +253,10 @@
                     d="M3.519 6.028L3.434 4.158L4.998 5.161L5.542 4.243L3.893 3.393L5.542 2.543L4.998 1.608L3.434 2.611L3.519 0.740999H2.448L2.533 2.611L0.952 1.608L0.425 2.543L2.074 3.393L0.425 4.243L0.952 5.161L2.533 4.158L2.448 6.028H3.519Z"
                     fill="#FE7865" />
                 </svg>
-                <!-- <span>+7</span> --><input class="contacts__tel" type="tel" id="tel"
-                  placeholder="Введите 10 цифр номера">
+                <input class="contacts__tel" type="tel" placeholder="Введите 10 цифр номера">
               </li>
               <li class="contacts__item">
-                <input class="contacts__email" type="email" id="email" placeholder="E-mail">
+                <input class="contacts__email" type="email" placeholder="E-mail">
               </li>
             </ul>
             <button class="contacts__button button" type="submit">Отправить</button>
@@ -219,39 +269,41 @@
       <div class="page-footer__wrapper travel">
         <div class="travel__city">
           <h2 class="travel__city-title">Следующие путешествия</h2>
-          <table class="travel__city-list">
-            <tr>
-              <td>Марсель</td>
-              <td>Сардиния</td>
-              <td>Корс</td>
-            </tr>
-            <tr>
-              <td>Ним</td>
-              <td>Палермо</td>
-              <td>Ницца</td>
-            </tr>
-            <tr>
-              <td>Монпелье</td>
-              <td>Катания</td>
-              <td>Монако</td>
-            </tr>
-            <tr>
-              <td>Барселона</td>
-              <td>Неаполь</td>
-              <td>Динь-ле-Бен</td>
-            </tr>
-            <tr>
-              <td>Пальма</td>
-              <td>Рим</td>
-              <td>Гренобль</td>
-            </tr>
-          </table>
+          <ul class="travel__city-list">
+            <li>
+              <ul class="travel__group-list travel__group-list--first">
+                <li>Марсель</li>
+                <li>Ним</li>
+                <li>Монпелье</li>
+                <li>Барселона</li>
+                <li>Пальма</li>
+              </ul>
+            </li>
+            <li>
+              <ul class="travel__group-list travel__group-list--second">
+                <li>Сардиния</li>
+                <li>Палермо</li>
+                <li>Катания</li>
+                <li>Неаполь</li>
+                <li>Рим</li>
+              </ul>
+            </li>
+            <li>
+              <ul class="travel__group-list travel__group-list--third">
+                <li>Корс</li>
+                <li>Ницца</li>
+                <li>Монако</li>
+                <li>Динь-ле-Бен</li>
+                <li>Гренобль</li>
+              </ul>
+            </li>
+          </ul>
         </div>
         <div class="travel__contact">
           <h2 class="travel__contact-title">Наши контакты</h2>
           <ul class="travel__contact-list">
             <li class="travel__contact-item">
-              <svg xmlns="http://www.w3.org/2000/svg" class="travel__tel-email" width="26" height="20"
+              <svg xmlns="http://www.w3.org/2000/svg" class="travel__email-icon" width="26" height="20"
                 viewBox="0 0 26 20" fill="none">
                 <path
                   d="M24.2273 0H1.77273C0.768182 0 0 0.764706 0 1.76471V18.2353C0 19.2353 0.768182 20 1.77273 20H24.2273C25.2318 20 26 19.2353 26 18.2353V1.76471C26 0.764706 25.2318 0 24.2273 0ZM24.2273 17L19.5591 12.3529C19.2045 12 18.6727 12 18.3182 12.3529C17.9636 12.7059 17.9636 13.2353 18.3182 13.5882L22.9864 18.2353H3.01362L7.68182 13.5882C8.03636 13.2353 8.03636 12.7059 7.68182 12.3529C7.32727 12 6.79547 12 6.44092 12.3529L1.77273 17V5.70585L12.4091 13.7059C12.5864 13.8236 12.7636 13.8823 12.9409 13.8823C13.1182 13.8823 13.2954 13.8236 13.4727 13.7059L24.2273 5.70585V17ZM24.2273 1.76471V3.4706L12.9409 11.8235L1.77273 3.4706V1.76471H24.2273Z"
@@ -285,6 +337,7 @@
   <footer>
 
   </footer>
+  <script src="js/popup.js"></script>
   <script src="js/menu.js"></script>
 </body>
 

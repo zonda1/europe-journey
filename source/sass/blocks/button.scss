@@ -17,4 +17,7 @@
     height: 50px;
   }
 
+  @media (max-width:$mobile-max-width) {
+    width: 288px;
+  }
 }
