@@ -1,0 +1,112 @@
+.promo {
+  height: 860px;
+  background: $grey url("../img/main-background-photo.jpg") no-repeat;
+  margin-bottom: 200px;
+
+  &__description {
+    padding: 185px 0 0 1075px;
+
+    @media (max-width:$tablet-max-width) {
+      text-align: center;
+      padding: 60px 0 0 185px;
+    }
+
+    @media (max-width:$mobile-max-width) {
+      text-align: center;
+      padding: 0;
+    }
+  }
+
+  @media (max-width:$tablet-max-width) {
+    height: 344px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 80px;
+  }
+
+  @media (max-width:$mobile-max-width) {
+    height: 433px;
+    background: url("../img/main-background-mobile.jpg") top no-repeat;
+  }
+}
+
+.promo__description {
+  @media (max-width:$mobile-max-width) {
+    padding: 0 16px 0;
+  }
+}
+
+.promo__title {
+  max-width: 412px;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  margin: 0 0 30px;
+  color: $white;
+  letter-spacing: -1.10667px;
+
+  @media (max-width:$tablet-max-width) {
+    @include font-parametrs(600, 30px, 45px);
+    margin: 0 0 15px -5px;
+    letter-spacing: normal;
+  }
+
+  @media (max-width:$mobile-max-width) {
+    @include font-parametrs(600, 24px, 36px);
+    max-width: 294px;
+    padding-top: 81px;
+    margin-bottom: 102px;
+    margin-left: 3px;
+  }
+}
+
+.promo__subtitle {
+  max-width: 370px;
+  font-size: 16px;
+  line-height: 27px;
+  margin: 0 0 34px;
+  color: $white;
+  letter-spacing: -0.466667px;
+
+  @media (max-width:$tablet-max-width) {
+    max-width: 400px;
+    margin: 0 0 10px;
+  }
+
+  @media (max-width:$mobile-max-width) {
+    max-width: 320px;
+    color: $dark-2;
+    margin: 0 0 20px;
+  }
+}
+
+.promo__link {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  width: 340px;
+  height: 75px;
+  padding-left: 40px;
+  color: $white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: $orange-basic url("../img/arrow-down-icon.svg") top 50% right 40px no-repeat;
+
+  &:hover {
+    background-color: $orange-extra;
+  }
+
+  @media (max-width:$tablet-max-width) {
+    @include font-parametrs(500, 10px, 12px);
+    width: 250px;
+    height: 50px;
+    margin-left: 74px;
+  }
+
+  @media (max-width:$mobile-max-width) {
+    width: 288px;
+    margin: 0;
+  }
+}

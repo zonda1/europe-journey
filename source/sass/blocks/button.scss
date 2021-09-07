@@ -1,0 +1,27 @@
+.button {
+  @include font-parametrs(600, 12px, 15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 176px;
+  height: 50px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $orange-basic;
+  border: 0;
+
+  &:hover {
+    background-color: $orange-extra;
+  }
+
+  @media (max-width:$tablet-max-width) {
+    @include font-parametrs(500, 10px, 12px);
+    width: 250px;
+    height: 50px;
+  }
+
+  @media (max-width:$mobile-max-width) {
+    width: 288px;
+  }
+}

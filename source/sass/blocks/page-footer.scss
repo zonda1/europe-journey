@@ -1,0 +1,13 @@
+.page-footer__wrapper {
+  @extend %desktop-wrapper;
+
+  @media (max-width:$tablet-max-width) {
+    max-width: 726px;
+    margin: 0 auto;
+  }
+
+  @media (max-width:$mobile-max-width) {
+    max-width: 288px;
+    margin: 0 auto;
+  }
+}

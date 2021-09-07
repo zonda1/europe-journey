@@ -1,0 +1,254 @@
+.countries__wrapper {
+  max-width: 1443px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 370px 430px;
+  grid-template-rows: auto auto;
+  column-gap: 100px;
+  row-gap: 65px;
+  padding-left: 137px;
+  position: relative;
+  padding-bottom: 507px;
+  background: url("../img/europe-map-dskt.png") top 120px right no-repeat;
+
+  @media (max-width:$tablet-max-width) {
+    display: block;
+    padding: 0;
+    margin-bottom: 100px;
+    background: none;
+  }
+
+  @media (max-width:$mobile-max-width) {
+    max-width: 320px;
+  }
+}
+
+.countries__list {
+  @extend %list-reset;
+  grid-area: 1/1/2/3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 13px;
+  border-bottom: 1px solid rgba($color: $dark-2, $alpha: 0.3);
+
+  @media (max-width:$tablet-max-width) {
+    max-width: 747px;
+    flex-wrap: nowrap;
+    margin: 0 0 30px 21px;
+    overflow: hidden;
+  }
+
+  @media (max-width:$mobile-max-width) {
+    max-width: 320px;
+    padding-bottom: 11px;
+    margin: 0 0 24px 16px;
+  }
+}
+
+.countries__item {
+  @media (max-width:$tablet-max-width) {
+    margin-right: 99px;
+  }
+}
+
+.countries__link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  letter-spacing: -0.415px;
+
+  color: rgba($color: $dark-2, $alpha: 0.3);
+
+  &--marked {
+    color: $orange-basic;
+  }
+}
+
+.countries__country {
+  @media (max-width:$tablet-max-width) {
+    max-width: 726px;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+
+  @media (max-width:$mobile-max-width) {
+    max-width: 288px;
+    margin: 0 auto 50px;
+  }
+}
+
+.countries__country-title {
+  @include font-parametrs(600, 55px, 90px);
+  color: $dark-2;
+  letter-spacing: -1.245px;
+  margin: 12px 0 45px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 175px;
+    height: 2.92px;
+    top: 100px;
+    left: 0;
+    background-color: $orange-basic;
+
+    @media (max-width:$tablet-max-width) {
+      display: none;
+    }
+  }
+
+  @media (max-width:$tablet-max-width) {
+    @include font-parametrs(600, 30px, 45px);
+    letter-spacing: normal;
+    margin: 0 0 20px;
+  }
+
+  @media (max-width:$mobile-max-width) {
+    @include font-parametrs(600, 24px, 36px);
+
+  }
+}
+
+.countries__country-description {
+  color: rgba($color: $dark-2, $alpha: 0.7);
+  letter-spacing: -0.466667px;
+  margin: 0 0 50px;
+
+  @media (max-width:$tablet-max-width) {
+    margin: 0 0 20px;
+  }
+}
+
+.countries__container-pic {
+  @media (max-width:$tablet-max-width) {
+
+    img {
+      width: 768px;
+      height: 415px;
+    }
+  }
+
+  @media (max-width:$mobile-max-width) {
+    width: 320px;
+
+    img {
+      width: 320px;
+      height: 415px;
+    }
+  }
+}
+
+.countries__country-link {
+  @include font-parametrs(600, 12px, 15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 75px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $orange-basic;
+
+  &:hover {
+    background-color: $orange-extra;
+  }
+
+  @media (max-width:$tablet-max-width) {
+    @include font-parametrs(500, 10px, 12px);
+    height: 50px;
+    margin-left: 238px;
+  }
+
+  @media (max-width:$mobile-max-width) {
+    width: 288px;
+    margin-left: 0;
+  }
+}
+
+.countries__feadback {
+  position: absolute;
+  width: 382px;
+  height: 367px;
+  top: 218px;
+  right: 137px;
+  background-color: $white;
+  padding: 0 30px 0;
+
+  @media (max-width:$tablet-max-width) {
+    top: 482px;
+    right: 193px;
+  }
+
+  @media (max-width:$mobile-max-width) {
+    width: 268px;
+    height: 431px;
+    top: 681px;
+    left: 26px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.countries__feadback-title {
+  @include font-parametrs(500, 30px, 37px);
+  color: $dark-2;
+  letter-spacing: -0.691667px;
+  margin: 30px 0 35px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 68px;
+    height: 0.73px;
+    top: 49px;
+    left: 0;
+    background-color: $orange-basic;
+
+    @media (max-width:$mobile-max-width) {
+      left: 100px;
+      top: 37px;
+    }
+  }
+
+  @media (max-width:$mobile-max-width) {
+    @include font-parametrs(500, 20px, 24px);
+    letter-spacing: -0.691667px;
+  }
+}
+
+.countries__feadback-description {
+  color: rgba($color: $dark-2, $alpha: 0.7);
+  font-size: 14px;
+  letter-spacing: -0.408333px;
+  margin: 0 0 30px;
+
+  @media (max-width:$mobile-max-width) {
+    max-width: 228px;
+    margin: 0 auto 0;
+  }
+}
+
+.countries__feadback-author {
+  @include font-parametrs(500, 16px, 20px);
+  letter-spacing: -0.466667px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  color: $dark-2;
+  padding-left: 53px;
+  background: url("../img/vlada-avatar.png") left no-repeat;
+
+  @media (max-width:$mobile-max-width) {
+    padding-left: 73px;
+    background: url("../img/vlada-avatar.png") 50% 15px no-repeat;
+    padding-top: 75px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

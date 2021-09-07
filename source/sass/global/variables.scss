@@ -1,0 +1,24 @@
+// Colors
+
+$dark: #141517;
+$dark-2: #2C2E3F;
+$dark-3:#293642;
+$grey:#D7D9DF;
+$grey-2:#48494D;
+$black: #000000;
+$white: #ffffff;
+$orange-basic:#FE7865;
+$orange-extra:#F17D4B;
+$light:#FBF8F8;
+
+//Mixins
+@mixin font-parametrs($weight, $size, $line-height) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+}
+
+// Viewports
+
+$mobile-max-width: 767px;
+$tablet-max-width: 1023px;
