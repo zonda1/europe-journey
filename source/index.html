@@ -13,10 +13,10 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <a href="" class="main-nav__logo-link">
+        <a href="#!" class="main-nav__logo-link">
           <picture>
             <source media="(max-width:1023px)" srcset="img/logo-pic__tablet.svg">
-            <img src="img/logo-pic__desktop.svg" class="main-nav__logo-pic" width="57" height="22" alt="">
+            <img src="img/logo-pic__desktop.svg" class="main-nav__logo-pic" width="57" height="22" alt="Логотип Way">
           </picture>
         </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -66,7 +66,7 @@
               <picture>
                 <source media="(max-width:767px)" srcset="img/greece_mobile.jpg">
                 <source media="(max-width:1023px)" srcset="img/greece_tablet.jpg">
-                <img src="img/greece_dktp.jpg" alt="">
+                <img src="img/greece_dktp.jpg" width="350" height="430" alt="Дом на скале в Греции">
               </picture>
             </a>
           </li>
@@ -75,7 +75,7 @@
               <p>Албания</p>
               <picture>
                 <source media="(max-width:1023px)" srcset="img/albania_tablet.jpg">
-                <img src="img/albania_dktp.jpg" alt="">
+                <img src="img/albania_dktp.jpg" width="350" height="430" alt="Курорт в Албании">
               </picture>
             </a>
           </li>
@@ -84,7 +84,7 @@
               <p>Македония</p>
               <picture>
                 <source media="(max-width:1023px)" srcset="img/makedonia_tablet.jpg">
-                <img src="img/makedonia_dktp.jpg" alt="">
+                <img src="img/makedonia_dktp.jpg" width="350" height="430" alt="Церковь в Македонии">
               </picture>
             </a>
           </li>
@@ -93,7 +93,7 @@
               <p>Черногория</p>
               <picture>
                 <source media="(max-width:1023px)" srcset="img/chernogoriya_tablet.jpg">
-                <img src="img/chernogoriya_dktp.jpg" alt="">
+                <img src="img/chernogoriya_dktp.jpg" width="350" height="430" alt="Река в Черногории">
               </picture>
             </a>
           </li>
@@ -102,7 +102,7 @@
               <p>Хорватия</p>
               <picture>
                 <source media="(max-width:1023px)" srcset="img/croatia_tablet.jpg">
-                <img src="img/croatia_dktp.jpg" alt="">
+                <img src="img/croatia_dktp.jpg" width="350" height="430" alt="Пещера в Хорватии">
               </picture>
             </a>
           </li>
@@ -114,19 +114,19 @@
       <div class="countries__wrapper">
         <ul class="countries__list">
           <li class="countries__item">
-            <a href="" class="countries__link countries__link--marked">Греция</a>
+            <a href="#!" class="countries__link countries__link--marked">Греция</a>
           </li>
           <li class="countries__item">
-            <a href="" class="countries__link">Албания</a>
+            <a href="#!" class="countries__link">Албания</a>
           </li>
           <li class="countries__item">
-            <a href="" class="countries__link">Македония</a>
+            <a href="#!" class="countries__link">Македония</a>
           </li>
           <li class="countries__item">
-            <a href="" class="countries__link">Черногория</a>
+            <a href="#!" class="countries__link">Черногория</a>
           </li>
           <li class="countries__item">
-            <a href="" class="countries__link">Хорватия</a>
+            <a href="#!" class="countries__link">Хорватия</a>
           </li>
         </ul>
         <div class="countries__country">
@@ -136,13 +136,13 @@
             монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной
             породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в
             монастырях Метеоры. </p>
-          <a href="" class="countries__country-link">купить тур сейчас</a>
+          <a href="#!" class="countries__country-link">купить тур сейчас</a>
         </div>
         <div class="countries__container-pic">
           <picture>
             <source media="(max-width:767px)" srcset="img/greece-info_mobile.jpg">
             <source media="(max-width:1023px)" srcset="img/greece-info_tablet.jpg">
-            <img src="img/greece-info_dktp.jpg" width="430" height="596" alt="">
+            <img src="img/greece-info_dktp.jpg" width="430" height="596" alt="Дом на скале в Греции">
           </picture>
         </div>
         <article class="countries__feadback">
@@ -193,6 +193,9 @@
         </ul>
       </div>
     </section>
+
+    <!-- Popups start -->
+
     <section class="pupup contacts">
       <div class="popup__wrapper">
         <div class="popup__buy-tour">
@@ -214,10 +217,12 @@
                     d="M3.519 6.028L3.434 4.158L4.998 5.161L5.542 4.243L3.893 3.393L5.542 2.543L4.998 1.608L3.434 2.611L3.519 0.740999H2.448L2.533 2.611L0.952 1.608L0.425 2.543L2.074 3.393L0.425 4.243L0.952 5.161L2.533 4.158L2.448 6.028H3.519Z"
                     fill="#FE7865" />
                 </svg>
+                <label class="visually-hidden" for="popup-tel"></label>
                 <input class="popup__tel contacts__tel" type="tel" name="popup-tel" placeholder="Введите 10 цифр номера"
                   required>
               </li>
               <li class="popup__form-item">
+                <label class="visually-hidden" for="popup-email"></label>
                 <input class="popup__email contacts__email" type="email" name="popup-email" placeholder="E-mail"
                   required>
               </li>
@@ -228,12 +233,12 @@
         </div>
       </div>
       <div class="popup__success">
-
         <p class="popup__success-title">Форма успешно отправлена, спасибо! :)</p>
         <button class="popup__close"><span class="visually-hidden">Закрыть окно</span></button>
-
       </div>
     </section>
+
+    <!-- Popups end -->
 
     <section class="contacts">
       <div class="contacts__wrapper">
@@ -253,10 +258,12 @@
                     d="M3.519 6.028L3.434 4.158L4.998 5.161L5.542 4.243L3.893 3.393L5.542 2.543L4.998 1.608L3.434 2.611L3.519 0.740999H2.448L2.533 2.611L0.952 1.608L0.425 2.543L2.074 3.393L0.425 4.243L0.952 5.161L2.533 4.158L2.448 6.028H3.519Z"
                     fill="#FE7865" />
                 </svg>
-                <input class="contacts__tel" type="tel" placeholder="Введите 10 цифр номера">
+                <label class="visually-hidden" for="contacts-tel"></label>
+                <input class="contacts__tel" type="tel" name="contacts-tel" placeholder="Введите 10 цифр номера">
               </li>
               <li class="contacts__item">
-                <input class="contacts__email" type="email" placeholder="E-mail">
+                <label class="visually-hidden" for="contacts-email"></label>
+                <input class="contacts__email" type="email" name="contacts-email" placeholder="E-mail">
               </li>
             </ul>
             <button class="contacts__button button" type="submit">Отправить</button>

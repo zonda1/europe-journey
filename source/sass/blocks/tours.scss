@@ -88,17 +88,6 @@
   margin-bottom: 100px;
   position: relative;
 
-  &:hover::after {
-    content: "";
-    position: absolute;
-    width: 350px;
-    height: 430px;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    background-color: rgba($color:$dark, $alpha: 0.6);
-  }
-
   &:nth-last-child(2) {
     margin-left: 175px;
 
@@ -132,10 +121,24 @@
 }
 
 .tours__link {
+  position: relative;
 
-  /* &:hover {
-    ba
-  } */
+  &:hover::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 430px;
+    top: -415px;
+    left: 0;
+    z-index: 3;
+    background: rgba($color:$dark, $alpha: 0.6) url(../../img/see-tour.png) 50% 50% no-repeat;
+
+    @media (max-width:$tablet-max-width) {
+      display: none;
+    }
+
+  }
+
   & p {
     position: absolute;
     z-index: 2;
@@ -146,7 +149,7 @@
     align-items: center;
     letter-spacing: -0.415px;
     width: 215px;
-    height: 61px;
+    height: 65px;
     left: 67.5px;
     bottom: -1px;
     margin: 0;

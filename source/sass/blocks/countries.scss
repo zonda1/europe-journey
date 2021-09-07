@@ -152,6 +152,10 @@
   color: $white;
   background-color: $orange-basic;
 
+  &:hover {
+    background-color: $orange-extra;
+  }
+
   @media (max-width:$tablet-max-width) {
     @include font-parametrs(500, 10px, 12px);
     height: 50px;
@@ -221,16 +225,29 @@
   color: rgba($color: $dark-2, $alpha: 0.7);
   font-size: 14px;
   letter-spacing: -0.408333px;
-  margin: 0 0 35px;
+  margin: 0 0 30px;
 
   @media (max-width:$mobile-max-width) {
     max-width: 228px;
-    margin: 0 auto 68px;
+    margin: 0 auto 0;
   }
 }
 
 .countries__feadback-author {
   @include font-parametrs(500, 16px, 20px);
   letter-spacing: -0.466667px;
+  height: 38px;
+  display: flex;
+  align-items: center;
   color: $dark-2;
+  padding-left: 53px;
+  background: url(../../img/vlada-avatar.png) left no-repeat;
+
+  @media (max-width:$mobile-max-width) {
+    padding-left: 73px;
+    background: url(../../img/vlada-avatar.png) 50% 15px no-repeat;
+    padding-top: 75px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }

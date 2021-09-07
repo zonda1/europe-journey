@@ -94,6 +94,9 @@
   text-transform: uppercase;
   background: $orange-basic url(../../img/arrow-down-icon.svg) top 50% right 40px no-repeat;
 
+  &:hover {
+    background-color: $orange-extra;
+  }
 
   @media (max-width:$tablet-max-width) {
     @include font-parametrs(500, 10px, 12px);

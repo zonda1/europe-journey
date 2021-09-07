@@ -95,15 +95,18 @@
 
 .price__contact-link {
   @include font-parametrs(400, 20px, 32px);
+  height: 32px;
+  padding-top: 4px;
   padding-left: 47px;
   color: $black;
-  background: url(../img/phone-icon.svg) left no-repeat;
+  background: url(../img/tel-orange-icon.svg) -3px 0px no-repeat;
 
   @media (max-width:$tablet-max-width) {
     font-size: 18px;
     color: $orange-basic;
     text-decoration: underline;
     padding-left: 0;
+    background: none;
   }
 }
 
@@ -128,7 +131,7 @@
 
 .price__items {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 370px;
   height: 672px;
 
@@ -142,6 +145,7 @@
   }
 
   @media (max-width:$tablet-max-width) {
+    flex-direction: column;
     width: 288px;
     height: 629px;
     margin: 0;
@@ -155,12 +159,12 @@
 .price__title {
   @include font-parametrs(600, 28px, 38px);
   color: rgba($color: $dark, $alpha: 0.7);
-  margin: 0 0 40px;
+  margin: 0 0 30px;
+
 
   @media (max-width:$tablet-max-width) {
     width: 248px;
     text-align: center;
-
     font-size: 24px;
     margin: 30px 17px 7px;
   }
@@ -168,6 +172,7 @@
   &--marked {
     @include font-parametrs(600, 28px, 34px);
     color: $orange-basic;
+    margin: 0 0 15px;
 
     @media (max-width:$tablet-max-width) {
       font-size: 24px;
@@ -178,30 +183,38 @@
 
 .price__price {
   @include font-parametrs(600, 25px, 34px);
-  margin: 0 0 11px -4px;
+  margin: 2px 0 0 auto;
+  color: rgba($color: $dark, $alpha: 0.7);
+
 
   @media (max-width:$tablet-max-width) {
     text-align: center;
-
+    margin: 0 0 11px -5px;
   }
 
   &--marked {
-    margin: 0 0 11px;
+    margin: 0 0 0 auto;
     color: $orange-basic;
+
+    @media (max-width:$tablet-max-width) {
+      text-align: center;
+      margin: 0 0 11px;
+    }
   }
 }
 
 .price__subtitle {
+  width: 100%;
   line-height: 24px;
   color: $dark-2;
-  padding-bottom: 28px;
+  padding-bottom: 21px;
   margin: 0 0 30px;
 
   @media (max-width:$tablet-max-width) {
     text-align: center;
     width: 248px;
     padding-bottom: 9px;
-    margin: 0 17px 20px;
+    margin: 0 0 20px 20px;
 
     br {
       display: none;
@@ -219,14 +232,48 @@
 
 
     .price__subtitle {
+
+      padding-bottom: 6px;
+      margin-left: -3px;
+      margin-bottom: 34px;
       border-bottom: 1px solid rgba($color: $orange-basic, $alpha: 0.5);
+
+      @media (max-width:$tablet-max-width) {
+        margin-left: 18px;
+        margin-bottom: 23px;
+      }
     }
 
     .price__inner-item {
       padding-left: 30px;
       margin-bottom: 8px;
+      margin-left: -3px;
       line-height: 32px;
       background: url(../img/check-icon-black.svg) left top 7px no-repeat;
+
+      @media (max-width:$tablet-max-width) {
+        margin-left: 0px;
+        margin-bottom: 6px;
+      }
+    }
+
+    .price__inner-item:nth-child(2),
+    .price__inner-item:nth-child(3) {
+      margin-bottom: 15px;
+
+      @media (max-width:$tablet-max-width) {
+        margin-bottom: 8px;
+      }
+    }
+
+    .price__inner-link {
+
+      @media (max-width:$tablet-max-width) {
+        width: 288px;
+        height: 50px;
+        margin-left: -3px;
+        margin-bottom: -4px;
+      }
     }
   }
 
@@ -241,8 +288,6 @@
       letter-spacing: -1.27273px;
     }
 
-
-
     .price__subtitle {
       border-bottom: 1px solid rgba($color: $dark-2, $alpha: 0.3);
     }
@@ -251,6 +296,25 @@
       padding-left: 30px;
       background: url(../img/check-icon-orange.svg) left top 12px no-repeat;
     }
+
+    .price__inner-link {
+      @media (max-width:$tablet-max-width) {
+        width: 288px;
+        height: 50px;
+        margin-left: -1px;
+        margin-bottom: -3px;
+      }
+    }
+
+    &:hover .price__inner-item {
+      padding-left: 30px;
+      background: url(../img/check-icon-black.svg) top 7px no-repeat;
+    }
+  }
+
+  &:hover {
+    border: 3px solid $orange-basic;
+
   }
 }
 
@@ -287,9 +351,11 @@
   background-color: $orange-basic;
   margin-top: auto;
 
+  &:hover {
+    background-color: $orange-extra;
+  }
+
   @media (max-width:$tablet-max-width) {
     @include font-parametrs(500, 10px, 12px);
-    width: 282px;
-    height: 50px;
   }
 }

@@ -11,6 +11,10 @@
   background-color: $orange-basic;
   border: 0;
 
+  &:hover {
+    background-color: $orange-extra;
+  }
+
   @media (max-width:$tablet-max-width) {
     @include font-parametrs(500, 10px, 12px);
     width: 250px;
