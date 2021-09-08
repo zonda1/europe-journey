@@ -1,6 +1,6 @@
 .promo {
   height: 860px;
-  background: url(../img/main-background-photo.jpg) no-repeat;
+  background: $grey url("../img/main-background-photo.jpg") no-repeat;
   margin-bottom: 200px;
 
   &__description {
@@ -26,7 +26,7 @@
 
   @media (max-width:$mobile-max-width) {
     height: 433px;
-    background: url(../../img/main-background-mobile.jpg) top no-repeat;
+    background: url("../img/main-background-mobile.jpg") top no-repeat;
   }
 }
 
@@ -92,7 +92,7 @@
   color: $white;
   letter-spacing: 2px;
   text-transform: uppercase;
-  background: $orange-basic url(../../img/arrow-down-icon.svg) top 50% right 40px no-repeat;
+  background: $orange-basic url("../img/arrow-down-icon.svg") top 50% right 40px no-repeat;
 
   &:hover {
     background-color: $orange-extra;

@@ -99,7 +99,7 @@
   padding-top: 4px;
   padding-left: 47px;
   color: $black;
-  background: url(../img/tel-orange-icon.svg) -3px 0px no-repeat;
+  background: url("../img/tel-orange-icon.svg") -3px 0px no-repeat;
 
   @media (max-width:$tablet-max-width) {
     font-size: 18px;
@@ -249,7 +249,7 @@
       margin-bottom: 8px;
       margin-left: -3px;
       line-height: 32px;
-      background: url(../img/check-icon-black.svg) left top 7px no-repeat;
+      background: url("../img/check-icon-black.svg") left top 7px no-repeat;
 
       @media (max-width:$tablet-max-width) {
         margin-left: 0px;
@@ -294,7 +294,7 @@
 
     .price__inner-item {
       padding-left: 30px;
-      background: url(../img/check-icon-orange.svg) left top 12px no-repeat;
+      background: url("../img/check-icon-orange.svg") left top 12px no-repeat;
     }
 
     .price__inner-link {
@@ -305,16 +305,6 @@
         margin-bottom: -3px;
       }
     }
-
-    &:hover .price__inner-item {
-      padding-left: 30px;
-      background: url(../img/check-icon-black.svg) top 7px no-repeat;
-    }
-  }
-
-  &:hover {
-    border: 3px solid $orange-basic;
-
   }
 }
 

@@ -4,12 +4,12 @@
 
 .contacts__form-container {
   height: 455px;
-  background: url(../img/sky-pink-dskp.jpg) left no-repeat;
+  background: $orange-basic url("../img/sky-pink-dskp.jpg") left no-repeat;
   display: flex;
   margin-bottom: 160px;
 
   @media (max-width:$tablet-max-width) {
-    background: url(../img/sky-pink-tablet.jpg);
+    background: $orange-basic url("../img/sky-pink-tablet.jpg");
     margin-bottom: 80px
   }
 

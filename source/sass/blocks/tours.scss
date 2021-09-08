@@ -131,7 +131,7 @@
     top: -415px;
     left: 0;
     z-index: 3;
-    background: rgba($color:$dark, $alpha: 0.6) url(../../img/see-tour.png) 50% 50% no-repeat;
+    background: rgba($color:$dark, $alpha: 0.6) url("../img/see-tour.png") 50% 50% no-repeat;
 
     @media (max-width:$tablet-max-width) {
       display: none;

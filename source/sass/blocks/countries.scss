@@ -9,7 +9,7 @@
   padding-left: 137px;
   position: relative;
   padding-bottom: 507px;
-  background: url(../../img/europe-map-dskt.png) top 120px right no-repeat;
+  background: url("../img/europe-map-dskt.png") top 120px right no-repeat;
 
   @media (max-width:$tablet-max-width) {
     display: block;
@@ -124,6 +124,7 @@
 
 .countries__container-pic {
   @media (max-width:$tablet-max-width) {
+
     img {
       width: 768px;
       height: 415px;
@@ -241,11 +242,11 @@
   align-items: center;
   color: $dark-2;
   padding-left: 53px;
-  background: url(../../img/vlada-avatar.png) left no-repeat;
+  background: url("../img/vlada-avatar.png") left no-repeat;
 
   @media (max-width:$mobile-max-width) {
     padding-left: 73px;
-    background: url(../../img/vlada-avatar.png) 50% 15px no-repeat;
+    background: url("../img/vlada-avatar.png") 50% 15px no-repeat;
     padding-top: 75px;
     margin-top: 0;
     margin-bottom: 0;
